@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: #f5f5f5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --font: "Poetsen One", sans-serif;
+    --font2: "Roboto", sans-serif;
+    --primary-color: #432577;
+}
+
+#root {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 10% auto;
+    background-color: #fff;
+    border-radius: 10px;
+    gap: 7px;
+}
+
+
+#root>h1 {
+    margin: 0%;
+    letter-spacing: 1px;
+    font-family: var(--font);
+    color: var(--primary-color);
+}
+
+#todo-input-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 5px 2px;
+    margin-top: 7px;
+}
+
+#todo-input-form>input {
+    width: 70%;
+    height: 40px;
+    font-family: var(--font2);
+    font-family: 500;
+    font-size: 17px;
+    padding: 10px;
+    font-style: italic;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: 1px solid #ece9e9;
+    border-radius: 2px;
+}
+
+#todo-input-form>input:hover {
+    border: 1px solid var(--primary-color);
+}
+
+#todo-input-form>input:focus {
+    border: 1px solid var(--primary-color);
+}
+
+#todo-input-form>button {
+    padding: 10px 12px;
+    color: #fff;
+    outline: none;
+    outline: none;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    font-family: var(--font2);
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#elsed-para {
+    font-family: var(--font2);
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+}
+
+#todo-list-dom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 5px;
+    gap: 13px;
+}
+
+.todo-list-task{
+    width: 100%;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.todo-list-task>p{
+    margin: 0px;
+    font-family: var(--font2);
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-left: 3px;
+}
+
+#button-cont{
+    display: flex;
+    gap: 2px;
+}
+
+#button-cont>button{
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+#button-cont>button>i{
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 800;
+}
+
+
+
+@media(min-width : 200px) and (max-width : 450px) {
+    body {
+        padding: 5px 8px;
+    }
+
+    #root {
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    #todo-input-form {
+        gap: 8px;
+    }
+
+    #todo-input-form>input {
+        width: 100%;
+    }
+
+    #todo-input-form>button{
+        width: 100%;
+    }
+}
